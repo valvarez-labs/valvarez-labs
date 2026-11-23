@@ -37,37 +37,7 @@ Lo que aprendo en clase lo pruebo en mi propio servidor: ahí viven mis webs y m
 
 ### Cómo está montado
 
-```mermaid
-flowchart LR
-    U([Navegador]) -->|HTTPS| CF[Cloudflare<br/>túnel cifrado · antibots]
-    CF -->|sin puertos abiertos| W
-    CF --> DC
-    subgraph PX[Proxmox VE · servidor dedicado OVHcloud]
-        direction LR
-        subgraph W[Webs y apps]
-            direction TB
-            A[web-alcasite<br/>nginx]
-            H[web-holgura<br/>nginx · PocketBase]
-            L[web-lazo<br/>nginx · incidencias]
-            E[web-encuadre<br/>nginx · incidencias]
-        end
-        subgraph DC[Documentación]
-            direction TB
-            B[bookstack]
-            P[panel-docs<br/>revisa datos sensibles]
-        end
-        subgraph DV[Trabajo]
-            direction TB
-            D[desarrollo<br/>git · Debian]
-        end
-    end
-    classDef nodo fill:#121418,stroke:#5fe3a1,color:#efece4
-    class A,H,L,E,B,P,D,CF,U nodo
-    style PX fill:#0b0c0e,stroke:#30363d,color:#efece4
-    style W fill:#0d1117,stroke:#30363d,color:#8f939b
-    style DC fill:#0d1117,stroke:#30363d,color:#8f939b
-    style DV fill:#0d1117,stroke:#30363d,color:#8f939b
-```
+<img src="assets/infra.png" alt="Navegador → Cloudflare (túnel cifrado, sin puertos abiertos) → Proxmox VE con los contenedores web-alcasite, web-holgura, web-lazo, web-encuadre, bookstack, panel-docs y desarrollo" width="100%">
 
 Cada contenedor tiene su propio cortafuegos (**nftables**) que limita también lo que puede salir. Se publica por **SSH** con usuarios que solo pueden escribir en su carpeta, todo va en **git** y hay copias de seguridad diarias. La documentación pasa por un panel propio que oculta contraseñas, claves e IPs antes de salir a [alcasite.com/docs](https://alcasite.com/docs/).
 
