@@ -18,11 +18,11 @@ Lo que aprendo en clase lo pruebo en mi propio servidor: ahí viven mis webs y m
 
 <table>
   <tr>
-    <td width="50%"><a href="https://holgura.alcasite.com"><img src="assets/holgura.png" alt="Holgura: app web de finanzas personales"></a></td>
+    <td width="50%"><a href="https://holguraapp.com"><img src="assets/holgura.png" alt="HolguraApp: app web de finanzas personales"></a></td>
     <td width="50%"><a href="https://lazo.alcasite.com"><img src="assets/lazo.png" alt="Lazo: app de escritorio para Windows y Linux"></a></td>
   </tr>
   <tr>
-    <td><b><a href="https://holgura.alcasite.com">Holgura</a></b> · app web de finanzas personales con cuentas (PocketBase), inicio con Google y modo sin conexión.</td>
+    <td><b><a href="https://holguraapp.com">HolguraApp</a></b> · app web de finanzas personales con cuentas (PocketBase), inicio con Google y modo sin conexión.</td>
     <td><b><a href="https://lazo.alcasite.com">Lazo</a></b> · Bluetooth, impresoras, redes y pantallas en una sola app de escritorio (Electron, PowerShell y Linux), con sistema de incidencias propio.</td>
   </tr>
   <tr>
