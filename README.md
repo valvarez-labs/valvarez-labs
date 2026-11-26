@@ -22,7 +22,7 @@ Lo que aprendo en clase lo pruebo en mi propio servidor: ahí viven mis webs y m
     <td width="50%"><a href="https://lazo.alcasite.com"><img src="assets/lazo.png" alt="Lazo: app de escritorio para Windows y Linux"></a></td>
   </tr>
   <tr>
-    <td><b><a href="https://holguraapp.com">HolguraApp</a></b> · app web de finanzas personales con cuentas (PocketBase), inicio con Google y modo sin conexión.</td>
+    <td><b><a href="https://holguraapp.com">HolguraApp</a></b> · app web de finanzas personales con cuentas (PocketBase), inicio con Google y sincronización entre móvil y ordenador.</td>
     <td><b><a href="https://lazo.alcasite.com">Lazo</a></b> · Bluetooth, impresoras, redes y pantallas en una sola app de escritorio (Electron, PowerShell y Linux), con sistema de incidencias propio.</td>
   </tr>
   <tr>
